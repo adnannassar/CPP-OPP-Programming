@@ -30,7 +30,11 @@ int main(int argc, char **argv)
         crash();
     }
     */
-    IntVector intVector(17);
+    IntVector intVector(17); // {1,2 ... 0}
+    intVector.at(1);
+    intVector[1];
+
+
     IntVector intVector2  = intVector;
     return 1;
 }

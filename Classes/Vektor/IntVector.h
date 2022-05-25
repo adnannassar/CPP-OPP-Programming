@@ -14,6 +14,10 @@ IntVector(const IntVector &orig);
 const size_t _size(){return size;}
 int& at(size_t idx);
 void out();
+
+// OPERATOREN
 IntVector& operator=(const IntVector&);
+int& operator[](int index);
+
 };
    

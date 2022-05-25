@@ -35,10 +35,13 @@ void IntVector::out()
     std::cout << std::endl;
 }
 
-// int* array;
-// int size;
+
 IntVector &IntVector::operator=(const IntVector &orig)
 {
    IntVector erg (orig);
    return erg;
+}
+
+int& IntVector::operator[](int index) {
+    return index > 0 && index < size ? array[index] : array[0];
 }
